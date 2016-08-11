@@ -13,6 +13,12 @@
 		B2B76D291D5C31A3004DA425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B76D271D5C31A3004DA425 /* LaunchScreen.storyboard */; };
 		B2B76D351D5C3237004DA425 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B76D331D5C3237004DA425 /* MainVC.swift */; };
 		B2B76D361D5C3237004DA425 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B76D341D5C3237004DA425 /* MainVC.xib */; };
+		B2B76D381D5C3335004DA425 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B76D371D5C3335004DA425 /* LoginView.xib */; };
+		B2B76D3A1D5C5BB5004DA425 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B76D391D5C5BB5004DA425 /* LoginView.swift */; };
+		B2B76D441D5C5F20004DA425 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B76D431D5C5F20004DA425 /* InputView.swift */; };
+		B2B76D461D5C5F33004DA425 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B76D451D5C5F33004DA425 /* InputView.xib */; };
+		B2B76D481D5C7737004DA425 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B76D471D5C7737004DA425 /* MaterialView.swift */; };
+		B2B76D4A1D5C83DD004DA425 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B76D491D5C83DD004DA425 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		B2B76D2A1D5C31A3004DA425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B76D331D5C3237004DA425 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ViewControllers/MainVC.swift; sourceTree = "<group>"; };
 		B2B76D341D5C3237004DA425 /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainVC.xib; path = ViewControllers/MainVC.xib; sourceTree = "<group>"; };
+		B2B76D371D5C3335004DA425 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = Views/LoginView.xib; sourceTree = "<group>"; };
+		B2B76D391D5C5BB5004DA425 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Views/LoginView.swift; sourceTree = "<group>"; };
+		B2B76D431D5C5F20004DA425 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputView.swift; path = Views/InputView.swift; sourceTree = "<group>"; };
+		B2B76D451D5C5F33004DA425 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputView.xib; path = Views/InputView.xib; sourceTree = "<group>"; };
+		B2B76D471D5C7737004DA425 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		B2B76D491D5C83DD004DA425 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,8 @@
 		B2B76D301D5C31CD004DA425 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2B76D491D5C83DD004DA425 /* background.png */,
+				B2B76D471D5C7737004DA425 /* MaterialView.swift */,
 				B2B76D221D5C31A3004DA425 /* Main.storyboard */,
 				B2B76D251D5C31A3004DA425 /* Assets.xcassets */,
 				B2B76D271D5C31A3004DA425 /* LaunchScreen.storyboard */,
@@ -87,6 +101,10 @@
 		B2B76D321D5C3215004DA425 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B2B76D391D5C5BB5004DA425 /* LoginView.swift */,
+				B2B76D371D5C3335004DA425 /* LoginView.xib */,
+				B2B76D431D5C5F20004DA425 /* InputView.swift */,
+				B2B76D451D5C5F33004DA425 /* InputView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -151,8 +169,11 @@
 			files = (
 				B2B76D291D5C31A3004DA425 /* LaunchScreen.storyboard in Resources */,
 				B2B76D361D5C3237004DA425 /* MainVC.xib in Resources */,
+				B2B76D4A1D5C83DD004DA425 /* background.png in Resources */,
 				B2B76D261D5C31A3004DA425 /* Assets.xcassets in Resources */,
+				B2B76D381D5C3335004DA425 /* LoginView.xib in Resources */,
 				B2B76D241D5C31A3004DA425 /* Main.storyboard in Resources */,
+				B2B76D461D5C5F33004DA425 /* InputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B76D3A1D5C5BB5004DA425 /* LoginView.swift in Sources */,
+				B2B76D441D5C5F20004DA425 /* InputView.swift in Sources */,
+				B2B76D481D5C7737004DA425 /* MaterialView.swift in Sources */,
 				B2B76D1F1D5C31A3004DA425 /* AppDelegate.swift in Sources */,
 				B2B76D351D5C3237004DA425 /* MainVC.swift in Sources */,
 			);

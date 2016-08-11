@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="LoginViewDemo" customModuleProvider="target">
@@ -14,8 +15,41 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="p66-CY-35a">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YkK-Qj-i7C" customClass="LoginView" customModule="LoginViewDemo" customModuleProvider="target">
+                    <rect key="frame" x="20" y="30" width="335" height="458.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YkK-Qj-i7C" secondAttribute="height" multiplier="350:473" id="zuR-D9-2BH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="zuR-D9-2BH"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YkK-Qj-i7C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="3eL-TW-4Mn"/>
+                <constraint firstAttribute="trailing" secondItem="YkK-Qj-i7C" secondAttribute="trailing" constant="20" symbolic="YES" id="8Bu-hN-57u"/>
+                <constraint firstAttribute="trailing" secondItem="p66-CY-35a" secondAttribute="trailing" id="Dwa-O8-kuF"/>
+                <constraint firstItem="p66-CY-35a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JrL-fJ-kkF"/>
+                <constraint firstItem="p66-CY-35a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N9O-zk-YOn"/>
+                <constraint firstAttribute="bottom" secondItem="p66-CY-35a" secondAttribute="bottom" id="UBJ-ND-7ug"/>
+                <constraint firstItem="YkK-Qj-i7C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="wss-iU-HRQ"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="background.png" width="812" height="1390"/>
+    </resources>
 </document>

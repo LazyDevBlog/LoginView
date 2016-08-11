@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GY-hV-ddV" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiB-Ev-bnT" userLabel="ImageContainer">
+                            <rect key="frame" x="1" y="1" width="48" height="48"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person_outline_white_36pt" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-cO-VDS">
+                                    <rect key="frame" x="12" y="6" width="24" height="36"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="HNG-cO-VDS" firstAttribute="width" secondItem="RiB-Ev-bnT" secondAttribute="width" multiplier="0.5" id="BRT-ok-Lkx"/>
+                                <constraint firstAttribute="width" secondItem="RiB-Ev-bnT" secondAttribute="height" multiplier="1:1" id="TG5-2s-QJc"/>
+                                <constraint firstItem="HNG-cO-VDS" firstAttribute="centerY" secondItem="RiB-Ev-bnT" secondAttribute="centerY" id="m6W-mZ-ais"/>
+                                <constraint firstItem="HNG-cO-VDS" firstAttribute="centerX" secondItem="RiB-Ev-bnT" secondAttribute="centerX" id="uUe-Ay-OKx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-AN-dDL" userLabel="TextFieldHolder">
+                            <rect key="frame" x="50" y="1" width="259" height="48"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdd-Rp-l7c">
+                                    <rect key="frame" x="20" y="0.0" width="239" height="48"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="sdd-Rp-l7c" firstAttribute="leading" secondItem="9Hh-AN-dDL" secondAttribute="leading" constant="20" symbolic="YES" id="1R4-1F-BXY"/>
+                                <constraint firstAttribute="trailing" secondItem="sdd-Rp-l7c" secondAttribute="trailing" id="ReO-c5-r42"/>
+                                <constraint firstAttribute="bottom" secondItem="sdd-Rp-l7c" secondAttribute="bottom" id="bOE-aW-cpq"/>
+                                <constraint firstItem="sdd-Rp-l7c" firstAttribute="top" secondItem="9Hh-AN-dDL" secondAttribute="top" id="g3g-d7-B05"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9Hh-AN-dDL" firstAttribute="top" secondItem="0GY-hV-ddV" secondAttribute="top" constant="1" id="0Lr-S7-XH7"/>
+                        <constraint firstItem="RiB-Ev-bnT" firstAttribute="leading" secondItem="0GY-hV-ddV" secondAttribute="leading" constant="1" id="J05-fX-2xm"/>
+                        <constraint firstItem="9Hh-AN-dDL" firstAttribute="leading" secondItem="RiB-Ev-bnT" secondAttribute="trailing" constant="1" id="JsQ-EK-jrg"/>
+                        <constraint firstAttribute="bottom" secondItem="9Hh-AN-dDL" secondAttribute="bottom" constant="1" id="MHk-EL-N8g"/>
+                        <constraint firstAttribute="trailing" secondItem="9Hh-AN-dDL" secondAttribute="trailing" constant="1" id="MYS-TT-a27"/>
+                        <constraint firstItem="RiB-Ev-bnT" firstAttribute="top" secondItem="0GY-hV-ddV" secondAttribute="top" constant="1" id="N7F-5j-sgV"/>
+                        <constraint firstAttribute="bottom" secondItem="RiB-Ev-bnT" secondAttribute="bottom" constant="1" id="g6m-sL-C0x"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0GY-hV-ddV" secondAttribute="trailing" id="93Q-uy-YND"/>
+                <constraint firstAttribute="bottom" secondItem="0GY-hV-ddV" secondAttribute="bottom" id="Z9h-3b-5qy"/>
+                <constraint firstItem="0GY-hV-ddV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ck0-Zg-qIc"/>
+                <constraint firstItem="0GY-hV-ddV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kFi-FC-oUW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="310" y="335"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_person_outline_white_36pt" width="36" height="36"/>
+    </resources>
+</document>
