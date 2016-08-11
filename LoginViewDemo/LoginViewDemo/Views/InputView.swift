@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class InputView: UIView {
 
     // MARK: - CONSTANTS
@@ -15,9 +16,24 @@ class InputView: UIView {
     
     // MARK: - OUTLETS
     
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var iconImage: UIImageView!
+    
+    @IBOutlet weak var containerView: UIView!
     
     //MARK: - @IBInspectable
+    @IBInspectable var placeHolderString: String = " "{
+        didSet {
+            self.textField.placeholder = placeHolderString
+        }
+    }
     
+    @IBInspectable var iconImg:UIImage = UIImage() {
+        didSet {
+            self.iconImage.image = iconImg
+        }
+    }
     
     // MARK: - VARIABLES
     var view: UIView!
@@ -60,5 +76,17 @@ class InputView: UIView {
         return view
     }
 
+
+}
+
+extension InputView: UITextFieldDelegate {
+    func textFieldDidBeginEditing(textField: UITextField) {
+        self.containerView.backgroundColor = UIColor(red: 0, green: 188/255, blue: 212/255, alpha: 1)
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+        self.containerView.backgroundColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1)
+        return true
+    }
 
 }
